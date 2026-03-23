@@ -1,0 +1,31 @@
+1. Email Validation
+Real-Time Scenario
+Whenever a user signs up (Amazon, banking apps, etc.), the system checks:
+
+Email should contain "@"
+Email should contain "."
+Email should not be empty
+
+👉 If valid → proceed
+👉 If invalid → show error
+
+Code - 
+public class EmailValidation {
+  public static void main(String[] args){
+
+    Scanner sc = new Scanner();
+    System.out.println("Enter Email");
+    String email = sc.nextLine();
+
+    //Validation Logic
+    if(email.isEmpty()){
+      System.out.println("Email cannot be empty");
+    }
+    else if(!email.contains("@") || !email.contains(".")){
+      System.out.println("Invalid Email Format");
+    }
+    else{
+      System.out.prinltn("Valid Email");
+    }
+  }
+}

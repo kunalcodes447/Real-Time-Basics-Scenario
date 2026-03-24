@@ -1,0 +1,41 @@
+OTP Verification
+When you log in to apps (banking, apps, etc.), system:
+
+Generates OTP
+User enters OTP
+System verifies
+Allows only limited attempts (3)
+
+Code - 
+
+import java.util.Scanner;
+
+public class OTPSystemMathRandom {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Generate 4-digit OTP using Math.random()
+        int otp = (int)(Math.random() * 9000) + 1000;
+
+        System.out.println("Generated OTP: " + otp);
+
+        int attempts = 0;
+
+        while (attempts < 3) {
+            System.out.println("Enter OTP:");
+            int userOtp = sc.nextInt();
+
+            if (userOtp == otp) {
+                System.out.println("OTP Verified Successfully");
+                return;
+            } else {
+                attempts++;
+                System.out.println("Wrong OTP");
+                System.out.println("Attempts left: " + (3 - attempts));
+            }
+        }
+
+        System.out.println("OTP Verification Failed");
+    }
+}

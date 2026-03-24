@@ -1,4 +1,4 @@
-1. Email Validation
+Email Validation
 Real-Time Scenario
 Whenever a user signs up (Amazon, banking apps, etc.), the system checks:
 
@@ -6,10 +6,11 @@ Email should contain "@"
 Email should contain "."
 Email should not be empty
 
-👉 If valid → proceed
-👉 If invalid → show error
+If valid → proceed
+If invalid → show error
 
 Code - 
+
 public class EmailValidation {
   public static void main(String[] args){
 

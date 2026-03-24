@@ -1,5 +1,6 @@
 Email Validation
 Real-Time Scenario
+
 Whenever a user signs up (Amazon, banking apps, etc.), the system checks:
 
 Email should contain "@"

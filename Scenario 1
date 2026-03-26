@@ -5,7 +5,7 @@ Whenever a user signs up (Amazon, banking apps, etc.), the system checks:
 
 Email should contain "@"
 Email should contain "."
-Email should not be empty
+Email should not be empty 
 
 If valid → proceed
 If invalid → show error

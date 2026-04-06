@@ -39,4 +39,3 @@ public class OTPSystemMathRandom {
         System.out.println("OTP Verification Failed");
     }
 }
-
